@@ -71,7 +71,25 @@ img {
   text-transform: capitalize;
   text-decoration: none;
   color: #36536b;
+  position: relative;
 }
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  bottom: -5px;
+  transition: transform 0.4s ease;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+.nav__link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
 .site-header__btn {
   text-transform: capitalize;
   text-decoration: none;
@@ -92,6 +110,7 @@ img {
 .site-header__icon {
   display: none;
 }
+
 
 .menu__label {
   position: absolute;
