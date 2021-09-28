@@ -16,23 +16,27 @@
 <body>
   <section id="site-hero" class="site-hero">
     <header class="site-header">
-      <div class="container">
+      <div class="container hero-container">
         <div class="row between align-center">
           <div class="site-header__logos">
             <a class="site-header__link" href="#">
               <img class="site-header__logo" src="img/logo.svg" alt="logo">
             </a>
           </div>
-          <nav class="site-header__nav nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-            </ul>
-          </nav>
-          <a class="site-header__btn" href="#">Schedule a Demo</a>
-          <div class="site-header__icon">
-            <button class="icon__btn"><i class='bx bx-menu'></i></button>
+          <input type="checkbox" name="menu-check" id="menuCheck">
+          <label class="menu__label" for="menuCheck">
+              <i class='bx bx-menu' id="open"></i>
+              <i class='bx bx-x' id="close"></i>
+          </label>
+          <div class="hero-menu row between align-center">
+            <nav class="site-header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+              </ul>
+            </nav>
+            <a class="site-header__btn" href="#">Schedule a Demo</a>
           </div>
         </div>
       </div>
