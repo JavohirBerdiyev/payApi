@@ -150,6 +150,9 @@ img {
     background-color: #1b262fd5;
     transition:transform 0.4s ease;
   }
+  #open {
+    display: block;
+  }
   #close,
   #open {
     cursor: pointer;
